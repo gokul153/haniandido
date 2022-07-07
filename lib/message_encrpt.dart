@@ -113,6 +113,15 @@ class _txtencryptState extends State<txtencrypt> {
                     ElevatedButton.icon(
                       onPressed: () {
                         data = _textcontrol.text;
+                        if (_keycontrol.text != null) {
+                          setState(() {
+                            key = int.parse(_keycontrol.text);
+                          });
+                        } else {
+                          key = 2;
+                          print("default ky is used");
+                        }
+                        ;
                         setState(() {
                           // print(data);
                           encryptedtext = " ";
@@ -121,7 +130,7 @@ class _txtencryptState extends State<txtencrypt> {
                       },
                       icon: Icon(Icons.enhanced_encryption_rounded),
                       label: Text(
-                        "Encrypt no key",
+                        "Encrypt ",
                       ),
                     ),
                     Padding(
@@ -131,6 +140,15 @@ class _txtencryptState extends State<txtencrypt> {
                           decryptedtext = "";
                           // key = _keycontrol.text;
                           //   data = _keycontrol.text;
+                          if (_keycontrol.text != null) {
+                            setState(() {
+                              key = int.parse(_keycontrol.text);
+                            });
+                          } else {
+                            key = 2;
+                            print("default key is used");
+                          }
+
                           setState(() {
                             decrypt_mesage(key);
                           });
