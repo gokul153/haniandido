@@ -116,7 +116,7 @@ class _Home_screenState extends State<Home_screen> {
                     fontSize: 50, fontFamily: 'Bold', color: Colors.white),
               ),
             ),
-            backgroundColor: Color(0xffee122a),
+            backgroundColor: Color.fromARGB(255, 58, 176, 255),
           ),
           // body: Body_shape(),
           body: SafeArea(
@@ -131,7 +131,7 @@ class _Home_screenState extends State<Home_screen> {
                     "Encryption Software",
                     textAlign: TextAlign.left,
                     style: TextStyle(
-                      color: Colors.red,
+                      color: Color.fromARGB(255, 54, 143, 244),
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
