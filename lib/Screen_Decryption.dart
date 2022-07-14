@@ -261,10 +261,12 @@ class _decryptionPageState extends State<decryptionPage> {
         decoration: InputDecoration(
           errorText: _validate ? 'please enter password' : null,
           focusedBorder: const OutlineInputBorder(
-            borderSide: BorderSide(color: Color(0xffee122a), width: 2.0),
+            borderSide: BorderSide(
+                color: Color.fromARGB(255, 33, 166, 255), width: 2.0),
           ),
           enabledBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: Color(0xffee122a), width: 1.5)),
+              borderSide: BorderSide(
+                  color: Color.fromARGB(255, 33, 166, 255), width: 1.5)),
           hintText: "Enter password",
         ),
         obscureText: true,
@@ -281,10 +283,12 @@ class _decryptionPageState extends State<decryptionPage> {
         decoration: InputDecoration(
           errorText: _validate ? 'Please enter file name' : null,
           focusedBorder: const OutlineInputBorder(
-            borderSide: BorderSide(color: Color(0xffee122a), width: 2.0),
+            borderSide: BorderSide(
+                color: Color.fromARGB(255, 33, 166, 255), width: 2.0),
           ),
           enabledBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: Color(0xffee122a), width: 1.5)),
+              borderSide: BorderSide(
+                  color: Color.fromARGB(255, 33, 166, 255), width: 1.5)),
           hintText: "Enter File name",
         ),
       ),
@@ -310,17 +314,17 @@ class _decryptionPageState extends State<decryptionPage> {
                 print(_pathpic);
                 count = 1;
                 ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                    backgroundColor: Color(0xff006aff),
+                    backgroundColor: Color.fromARGB(255, 33, 166, 255),
                     content: Text(' File Selected')));
               } else {
                 ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                    backgroundColor: Color(0xffee122a),
+                    backgroundColor: Color.fromARGB(255, 33, 166, 255),
                     content: Text(' File not Selected.Abort')));
                 print("abort");
               }
             },
             style: ElevatedButton.styleFrom(
-              primary: const Color(0xffee122a),
+              primary: Color.fromARGB(255, 33, 166, 255),
               shape: const StadiumBorder(),
             ),
             child: Text(
@@ -347,7 +351,7 @@ class _decryptionPageState extends State<decryptionPage> {
           margin: const EdgeInsets.only(bottom: 20),
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              primary: const Color(0xffee122a),
+              primary: Color.fromARGB(255, 33, 166, 255),
               shape: const StadiumBorder(),
             ),
             onPressed: () async {
@@ -418,7 +422,7 @@ class _decryptionPageState extends State<decryptionPage> {
                 } catch (e) {
                   print('The decryption has been completed unsuccessfully.');
                   ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                      backgroundColor: Color(0xffee122a),
+                      backgroundColor: Color.fromARGB(255, 33, 166, 255),
                       content: Text(
                         ' Decryption unsuccessfull! please enter valid password',
                         textAlign: TextAlign.center,
@@ -430,7 +434,7 @@ class _decryptionPageState extends State<decryptionPage> {
               }
               if (_pathpic == null) {
                 ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                    backgroundColor: Color(0xffee122a),
+                    backgroundColor: Color.fromARGB(255, 33, 166, 255),
                     content: Text(
                       'Please select file',
                       textAlign: TextAlign.center,
@@ -515,7 +519,7 @@ class _decryptionPageState extends State<decryptionPage> {
                 width: MediaQuery.of(context).size.width,
                 child: Container(
                   decoration: const BoxDecoration(
-                      color: Color(0xffee122a),
+                      color: Color.fromARGB(255, 33, 166, 255),
                       borderRadius: BorderRadius.only(
                           // bottomLeft: Radius.circular(70),
                           //bottomRight: Radius.circular(70),

@@ -110,13 +110,13 @@ class _Home_screenState extends State<Home_screen> {
             title: Padding(
               padding: const EdgeInsets.all(60),
               child: const Text(
-                "Krypt it!",
-                textAlign: TextAlign.center,
+                "KRYPT IT!",
+                textAlign: TextAlign.left,
                 style: TextStyle(
-                    fontSize: 50, fontFamily: 'Bold', color: Colors.white),
+                    fontSize: 25, fontFamily: 'Bold', color: Colors.white),
               ),
             ),
-            backgroundColor: Color(0xffee122a),
+            backgroundColor: Color.fromARGB(255, 33, 166, 255),
           ),
           // body: Body_shape(),
           body: SafeArea(
@@ -131,7 +131,7 @@ class _Home_screenState extends State<Home_screen> {
                     "Encryption Software",
                     textAlign: TextAlign.left,
                     style: TextStyle(
-                      color: Colors.red,
+                      color: Color.fromARGB(255, 33, 166, 255),
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
@@ -171,7 +171,7 @@ class _Home_screenState extends State<Home_screen> {
                     ),
                   ),
                   Center(
-                    child: Row(
+                    child: Column(
                       children: [
                         //r     Padding(
                         //  padding: const EdgeInsets.all(8.0),
